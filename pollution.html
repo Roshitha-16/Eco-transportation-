@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pollution Rate Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="pollution.js" defer></script> <!-- Link to the JS file for logic -->
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Eco Transit Solutions</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="goals.html">Goals</a></li>
+                    <li><a href="precautions.html">Precautions</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pollution.html">Pollution Rate</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="pollution-section">
+        <div class="pollution-container">
+            <h2>Pollution Rate Calculator</h2>
+            <p>Select a city to calculate the pollution rate:</p>
+            
+            <label for="city">Choose a city:</label>
+            <select id="city">
+                <option value="mumbai">Mumbai</option>
+                <option value="delhi">Delhi</option>
+                <option value="kolkata">Kolkata</option>
+                <!-- Adding all the cities -->
+                <option value="amaravati">Amaravati, Andhra Pradesh</option>
+                <option value="itanagar">Itanagar, Arunachal Pradesh</option>
+                <option value="dispur">Dispur, Assam</option>
+                <option value="patna">Patna, Bihar</option>
+                <option value="raipur">Raipur, Chhattisgarh</option>
+                <option value="panaji">Panaji, Goa</option>
+                <option value="gandhinagar">Gandhinagar, Gujarat</option>
+                <option value="chandigarh">Chandigarh, Haryana</option>
+                <option value="shimla">Shimla, Himachal Pradesh</option>
+                <option value="ranchi">Ranchi, Jharkhand</option>
+                <option value="bengaluru">Bengaluru, Karnataka</option>
+                <option value="thiruvananthapuram">Thiruvananthapuram, Kerala</option>
+                <option value="bhopal">Bhopal, Madhya Pradesh</option>
+                <option value="mumbai">Mumbai, Maharashtra</option>
+                <option value="imphal">Imphal, Manipur</option>
+                <option value="shillong">Shillong, Meghalaya</option>
+                <option value="aizawl">Aizawl, Mizoram</option>
+                <option value="kohima">Kohima, Nagaland</option>
+                <option value="bhubaneswar">Bhubaneswar, Odisha</option>
+                <option value="jaipur">Jaipur, Rajasthan</option>
+                <option value="gangtok">Gangtok, Sikkim</option>
+                <option value="chennai">Chennai, Tamil Nadu</option>
+                <option value="hyderabad">Hyderabad, Telangana</option>
+                <option value="agartala">Agartala, Tripura</option>
+                <option value="lucknow">Lucknow, Uttar Pradesh</option>
+                <option value="dehradun">Dehradun, Uttarakhand</option>
+                <option value="kolkata">Kolkata, West Bengal</option>
+            </select>
+
+            <button onclick="calculatePollution()" class="calculate-btn">Calculate Pollution Rate</button>
+
+            <h3>Pollution Rate for <span id="selected-city">-</span>:</h3>
+            <p id="pollution-result">N/A</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Eco Transit Solutions</p>
+        </div>
+    </footer>
+
+</body>
+</html> 
